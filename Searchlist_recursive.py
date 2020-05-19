@@ -22,4 +22,4 @@ def search_array(sublist,sval):
 
 
 lis=[3,5,2,6,7,4,21,9]
-print(srightary(lis,12))
+print(search_array(lis,12))
