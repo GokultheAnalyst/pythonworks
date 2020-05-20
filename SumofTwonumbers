@@ -1,0 +1,21 @@
+#This function finds a indexes of elements, those elements sum should match to target value and return a string
+## input list - > [4,6,8,9,13,45]
+## target - > 13
+#Return the indexes of values 6,8  i.e. 1,2
+
+def twoSum( nums, target):
+    endptr=len(nums)-1
+    i=0
+    if nums:
+        while (i < endptr):
+            if target==nums[i]+nums[endptr]:
+                return [i,endptr]
+            elif target > nums[i]+nums[endptr]:
+                i += 1
+            elif target < nums[i]+nums[endptr]:
+                endptr -= 1
+            else:
+                return []
+
+
+print(twoSum([4,6,8,9,13,45],13))
